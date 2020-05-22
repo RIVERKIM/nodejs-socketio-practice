@@ -1,26 +1,28 @@
 {
-  "name": "customer-cli",
+  "name": "chatcord",
   "version": "1.0.0",
-  "description": "Customer management CLI",
-  "main": "index.js",
-  "preferGlobal": true,
-  "bin": "bin/commands.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+	"dev": "nodemon server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RIVERKIM/JSONWebtoken-api-practice.git"
+    "url": "git+https://github.com/RIVERKIM/nodejs-cli-with-commanderjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RIVERKIM/JSONWebtoken-api-practice/issues"
+    "url": "https://github.com/RIVERKIM/nodejs-cli-with-commanderjs/issues"
   },
-  "homepage": "https://github.com/RIVERKIM/JSONWebtoken-api-practice#readme",
+  "homepage": "https://github.com/RIVERKIM/nodejs-cli-with-commanderjs#readme",
   "dependencies": {
-    "commander": "^5.1.0",
-    "inquirer": "^7.1.0",
-    "mongoose": "^5.9.14"
+    "express": "^4.17.1",
+    "moment": "^2.25.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
